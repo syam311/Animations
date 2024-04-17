@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+  position:fixed;
+  height: 100vh;
+ border: 2px solid green;
+ overflow: hidden;
+ padding-right: 500px;
+ background-color: beige;
+}
+h1{
+  color: rgb(17, 25, 114);
+}
+span{
+  display: block;
+}
+#mn{
+    height: 300px;
+    width: 150px;
+    border: 1px solid black;
+    position: relative;
+ 
+
+}
+@keyframes ball {
+  0%   {height: 0px;}
+  25%  {height: 150px;}
+  50%  {height: 190px;}
+  100% {height: 300px;}
+}
+#ball{
+  display: inline;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(26, 141, 229);
+  position: absolute;
+
+  bottom: 0px;
+  animation: ball 4s  infinite alternate-reverse ;
+  
+}
+#ba{
+  display: inline;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(229, 26, 26);
+  position:absolute;
+  bottom: 0px;
+  animation:ba  2s alternate-reverse  infinite;
+ 
+}
+
+
+#bal{
+  display: inline;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(17, 216, 73);
+  position: absolute;
+  bottom: 0px;
+  animation:bal 2s alternate-reverse  infinite;
+  
+  margin-left: 30px;
+
+}
+
+  #bar1{
+  display: inline;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(12, 47, 223);
+  position: absolute;
+  bottom: 0px;
+  animation:bal 2s alternate-reverse  infinite;
+  
+  margin-left: 90px;
+}
+#bar{
+  display: inline;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(239, 247, 10);
+  position: absolute;
+  bottom: 0px;
+  animation:bar 2s alternate-reverse  infinite;
+  
+  margin-left: 120px;
+  }
+
+
+
+
+@keyframes bal {
+  0%   {height: 100px;}
+  25%  {height: 150px;}
+   50%  { height: 190px;}
+ 100% {height: 300px;}
+}
+@keyframes bar {
+  0%   {height: 100px;}
+  25%  {height: 150px;}
+  50%  { height: 190px;}
+  /* 100% {height: 300px;} */
+}
+@keyframes ba {
+  0%   {height: 100px;}
+  25%  {height: 150px;}
+   /* 50%  { height: 190px;}  */
+   /* 100% {height: 300px;}  */
+}
+@keyframes bar1 {
+  0%   {height: 100px;}
+  25%  {height: 150px;}
+  50%  { height: 190px;}
+ }
+
+</style>
+</head>
+<body>
+  <span><marquee behavior="" direction="right"><h1>Animation</h1></marquee></span>
+
+
+<div id="mn">
+<div id="ball" style="margin-left: 60px;"></div>
+<div id="ba"></div>
+<div id="bal"></div>
+<div id="bar"></div>
+<div id="bar1"></div>
+
+</div>
+</body>
+</html>
+
+
